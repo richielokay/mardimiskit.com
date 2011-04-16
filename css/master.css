@@ -1,0 +1,259 @@
+/* 
+Title:		Master styles for screen media
+Author: 	richie@wingtipmarketing.com
+*/
+/* typography.css */
+html {
+	font-size: 100.01%;
+}
+
+body {
+	font-size: 62.5%;
+	color: #ffffff;
+	background: #000000 url(../mm_chives.jpg) no-repeat center top;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-rendering: optimizeLegibility;
+	line-height: 1.25;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 1;
+	color: #ffffff; 
+	font-style: italic; 
+	letter-spacing: 1.5px;
+		text-shadow: rgb(18, 39, 6) 0 1px 2px;
+
+	  
+}
+
+
+h3 {
+	font-variant: small-caps;
+	font-family: Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
+	color: #857667;
+	padding: 15px 0;
+	font-size: 28px;
+	line-height: 1.25;
+	
+}
+
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img {
+	margin: 0;
+}
+
+p {
+	color: #666;  
+	font-size: 14px;
+	margin: .25em 0;
+	line-height: 1.5;
+	text-align: center;
+}
+
+p img.left {
+	float: left;
+	margin: 1.5em 1.5em 1.5em 0;
+	padding: 0;
+}
+
+p img.right {
+	float: right;
+	margin: 1.5em 0 1.5em 1.5em;
+}
+
+a:focus,a:hover {
+	color: #000;
+}
+
+a {
+	color: #857667;
+	text-decoration: underline;
+}
+
+blockquote {
+	margin: 1.5em;
+	color: #666;
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em,dfn {
+	font-style: italic;
+}
+
+dfn {
+	font-weight: 700;
+}
+
+sup,sub {
+	line-height: 0;
+}
+
+abbr,acronym {
+	border-bottom: 1px dotted #666;
+}
+
+address {
+	margin: 0 0 1.5em;
+	font-style: italic;
+}
+
+del {
+	color: #666;
+}
+
+pre {
+	margin: 1.5em 0;
+	white-space: pre;
+}
+
+pre,code,tt {
+	font: 1em 'andale mono', 'lucida console', monospace;
+	line-height: 1.5;
+}
+
+li ul,li ol {
+
+
+}
+
+ul,ol {
+}
+
+ul {
+	margin: 20px auto; text-align: center;
+}
+
+li {
+display: inline;
+		padding: 15px 15px;
+	list-style: none;
+		font-variant: small-caps;
+	font-family: Palatino, Constantia, "Book Antiqua", "URW Palladio L", serif;
+	color: #857667;
+	font-size: 24px;
+	letter-spacing: 2px;
+		text-shadow: rgb(18, 39, 6) 0 1px 2px;
+}
+
+li a{
+	color: #857667;
+	letter-spacing: 2px;
+		text-shadow: rgb(18, 39, 6) 0 1px 2px;
+}
+ol {
+	list-style-type: decimal;
+}
+
+dl {
+	margin: 0 0 1.5em;
+}
+
+dl dt {
+	font-weight: 700;
+}
+
+dd {
+	margin-left: 1.5em;
+}
+
+table {
+	margin-bottom: 1.4em;
+	width: 100%;
+}
+
+th {
+	font-weight: 700;
+}
+
+thead th {
+	background: #c3d9ff;
+}
+
+/* !links */
+a:link,a:visited {
+	color: #857667;
+	text-decoration: none;
+	outline: none;
+	-webkit-transition: color .4s linear;
+}
+
+a:hover {
+	outline: none;
+	color: #ffffff;
+}
+
+a:active {
+	padding: 0;
+	color: #666;
+}
+
+em {
+}
+
+/* !page structure */
+
+.messaging {
+	width: 80%;
+	margin: 38% auto 0; 
+	padding: 0 5% 5px; 
+}
+
+.emphasis {
+	font-style: italic; 
+}
+
+#footer {
+	font-size: 9; 
+	text-align:center; 
+	margin: 10px 0; 
+	line-height: 1.5;
+}
+
+#footer a {
+
+}
+/* !HEADER */
+#header {
+}
+
+/* !misc. */
+hr {
+	display: block;
+	color: #EEE;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/* !swapper */
+a.swapper img {
+	-webkit-transition: opacity .6s ease-in-out;
+}
+
+img.state1,a.swapper:hover img.state2 {
+	opacity: 1.0;
+}
+
+a.swapper:hover img.state1,img.state2 {
+	opacity: 0;
+}
+
+/* !self-clear floats */
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
